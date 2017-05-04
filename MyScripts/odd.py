@@ -8,12 +8,12 @@ print(sys.version)
 print(sys.platform)
 print(os.getcwd())
 print(os.environ)
+print(os.getenv('AKKA_HOME'))
 odds = [1, 3, 5, 7, 9, 11, 13, 15, 17, 19,
-        21, 23, 25, 27, 29, 31, 33, 35, 37,39,
+        21, 23, 25, 27, 29, 31, 33, 35, 37, 39,
         41, 43, 45, 47, 49, 51, 53, 55, 57, 59]
 
 right_this_minute = datetime.today().minute
-
 
 if right_this_minute in odds:
     print("This is odd minute  ...")
@@ -24,3 +24,6 @@ time.strftime("%H:%M")
 
 print(html.escape("This HTML contains a <script>script</script> tag"))
 print(html.unescape("I &hearts; python's &lt;standard library &gt;."))
+print(datetime.date(datetime.today()))
+print(datetime.today())
+print(time.strftime("%H %M"))
